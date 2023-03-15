@@ -7,13 +7,16 @@ public class SceneController : MonoBehaviour
     public BoidController boidPre;
     public int boidNumber=100;
     private List<BoidController> _boids;
-
+    
 
     private void SpawnBoid(GameObject prefab, int swarmIndex){
         var boidInstance=Instantiate(prefab);
+        boidInstance.transform.localPosition = new Vector3(0, 0, 0);
         boidInstance.transform.localPosition+= new Vector3(Random.Range(-10,10),Random.Range(-10,10),Random.Range(-10,10));
         _boids.Add(boidPre);
     }
+
+    
 
 
 
@@ -30,6 +33,9 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
+        foreach(BoidController boids in _boids)
+        {
+            boids.BoidMovement(_boids, Time.deltaTime);
+        }
     }
 }
