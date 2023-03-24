@@ -37,6 +37,7 @@ public class BoidManager : MonoBehaviour
             
             var spawnPosition= transform.position + randVec;
             var rotation= Quaternion.Euler(0, Random.Range(0,360), 0);
+            
 
             // Sets the initial position of the boids
             boidArray[i]= Instantiate(boidUnitPrefab, spawnPosition, rotation);
