@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.68553454, g: 0.73660165, b: 1, a: 0}
+  m_BackGroundColor: {r: 1, g: 0.68553454, b: 0.8983296, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -174,9 +174,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  field of view: 90
+  orthographic: 1
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -237,10 +237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boidPrefab: {fileID: 1487491484}
-  behaviour: {fileID: 11400000, guid: 3ec66804658025741b62818f85e5e487, type: 2}
+  behaviour: {fileID: 11400000, guid: c86221362d92b134d93627fb4bf801cb, type: 2}
   AmountOfBoids: 250
   maxSpeed: 5
-  steeringFactor: 10
+  steeringFactor: 25
   neighbourRadius: 1.5
   RadiusMultiplier: 0.5
 --- !u!4 &1117171340
@@ -322,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 596386450907604785, guid: 5ecdc8f7071d3ef45a9df6cc7b0db176, type: 3}
       propertyPath: m_Radius
-      value: 1.2
+      value: 1.53
       objectReference: {fileID: 0}
     - target: {fileID: 2096010411300060953, guid: 5ecdc8f7071d3ef45a9df6cc7b0db176, type: 3}
       propertyPath: m_FlipX

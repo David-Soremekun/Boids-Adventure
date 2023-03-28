@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class BoidBehaviour : ScriptableObject
 {
+   
     public abstract Vector3 CalculateMovement(Boid b, List<Transform> context, Flock flock);
     
 

@@ -24,7 +24,6 @@ public class CombinedBehaviour : BoidBehaviour
             {
                 halfMove.Normalize();
                 halfMove *= weights[i];
-
             }
             moveVec += halfMove;
         }
