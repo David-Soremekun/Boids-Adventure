@@ -8,6 +8,7 @@ public class Flock : MonoBehaviour
     [Header("Boid Spawn Setup: ")]
     public Boid boidPrefab;
     public BoidBehaviour behaviour;
+    public int BoundingDist=40;
     List<Boid> boidList= new List<Boid>();
 
     [Header("Flock Initialisations: ")]
@@ -48,6 +49,7 @@ public class Flock : MonoBehaviour
                 );
             Debug.Log("Boid " + i + " Created!");
             b.name = "Element " + i;
+            b.Init(this);
             boidList.Add(b);
         }
     }

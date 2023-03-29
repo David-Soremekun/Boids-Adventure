@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(menuName ="Flock/Behaviour/Cohesion")]
-public class CohesionBehaviour : BoidBehaviour
+public class CohesionBehaviour : FilteredFlockBehaviour
 {
     public override Vector3 CalculateMovement(Boid b, List<Transform> context, Flock flock)
     {
@@ -10,7 +10,8 @@ public class CohesionBehaviour : BoidBehaviour
             return Vector3.zero;
 
         Vector3 cohesionVec = Vector3.zero;
-        foreach (Transform item in context)
+        List<Transform> filteredContext = (filter == null) ? context : filter.contextfilter(b, context);
+        foreach (Transform item in filteredContext)
         {
             cohesionVec += item.position;
         }

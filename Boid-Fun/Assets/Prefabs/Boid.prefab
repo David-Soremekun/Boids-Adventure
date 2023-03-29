@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4209770162753879675}
-  - component: {fileID: 2096010411300060953}
+  - component: {fileID: 567740324773438525}
   m_Layer: 0
   m_Name: Boid Sprite
   m_TagString: Untagged
@@ -26,13 +26,13 @@ Transform:
   m_GameObject: {fileID: 3454916519547784499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 154221887406179781}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2096010411300060953
+--- !u!212 &567740324773438525
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,8 +111,8 @@ Transform:
   m_GameObject: {fileID: 5162402795463266658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.21759737, y: 0.71760523, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 33.78, y: 33.78, z: 33.78}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4209770162753879675}
   m_Father: {fileID: 0}
@@ -145,4 +145,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 2.2
