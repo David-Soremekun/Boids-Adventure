@@ -14,6 +14,7 @@ public class FramesOutput : MonoBehaviour
     private void Start()
     {
         _fpsText = GetComponent<TMP_Text>();
+        _fpsText.alignment = TextAlignmentOptions.TopLeft;
         StartCoroutine(FramesPerSecond());
     }
  
