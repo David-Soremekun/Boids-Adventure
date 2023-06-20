@@ -199,7 +199,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -329,7 +329,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 41.949707, z: 95.29548, w: 38.72809}
+  m_margin: {x: 0, y: 41.949707, z: 74.85315, w: 38.72809}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -387,7 +387,7 @@ MonoBehaviour:
   boidPrefab: {fileID: 1538884357444570452, guid: 814576033fe18b64ea980c19bc838209, type: 3}
   behaviour: {fileID: 11400000, guid: c86221362d92b134d93627fb4bf801cb, type: 2}
   BoundingDist: 20
-  AmountOfBoids: 200
+  AmountOfBoids: 250
   maxSpeed: 10
   steeringFactor: 25
   neighbourRadius: 2.4
@@ -400,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117171338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -9.901723}
+  m_LocalPosition: {x: 6, y: 0.8, z: -9.901723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 1364477429}
   - component: {fileID: 1364477431}
   - component: {fileID: 1364477430}
+  - component: {fileID: 1364477432}
   m_Layer: 5
   m_Name: Boid-Fun
   m_TagString: Untagged
@@ -442,7 +443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 426, y: -259}
+  m_AnchoredPosition: {x: 458, y: -158}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364477430
@@ -528,7 +529,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -42.97638, y: 0, z: 179.3797, w: 29.896606}
+  m_margin: {x: -42.97638, y: -3.4070587, z: 179.3797, w: 29.896606}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -542,6 +543,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364477428}
   m_CullTransparentMesh: 1
+--- !u!114 &1364477432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364477428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9060917afad04fd46ae1e91bfa641aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1914210751
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,10 +651,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a992b96c8daea40b174c537b86b9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boidPrefab: {fileID: 1538884357444570452, guid: 50a414303d5be3749b5d5ee5d1577423, type: 3}
+  boidPrefab: {fileID: 1538884357444570452, guid: c9f4a90c54300cc4187bd5cbdf9169ee, type: 3}
   behaviour: {fileID: 11400000, guid: c86221362d92b134d93627fb4bf801cb, type: 2}
   BoundingDist: 20
-  AmountOfBoids: 200
+  AmountOfBoids: 250
   maxSpeed: 10
   steeringFactor: 25
   neighbourRadius: 2.4
@@ -654,7 +667,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045119688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.6, y: -9.3, z: -9.901723}
+  m_LocalPosition: {x: -38.9, y: 0.5, z: -9.901723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4321ee89bb30a7b4ea47e97f0bc74a0e, type: 3}
-  m_Color: {r: 1, g: 0.54020506, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.2048509, b: 0.12893075, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 1538884357444570452}
   - component: {fileID: 3601467715787714926}
   m_Layer: 0
-  m_Name: BoidPrefab-Orange
+  m_Name: BoidPrefab-Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
